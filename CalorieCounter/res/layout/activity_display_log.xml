@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayLogActivity" >
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="10dp"
+        android:onClick="addNewLogEntry"
+        android:text="@string/add_new_log_entry"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/back_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:minHeight="36dp"
+        android:minWidth="100dp"
+        android:onClick="closeActivity"
+        android:text="@string/back_button" />
+
+    <ListView
+        android:id="@+id/log_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back_button"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/add_button"
+        android:scrollbars="vertical"
+        android:textSize="12sp" >
+
+    </ListView>
+
+</RelativeLayout>

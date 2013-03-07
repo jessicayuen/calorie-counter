@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_cals"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:text="@string/total_time"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/average_cals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_time"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:text="@string/average_cals"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/total_cals"
+        android:layout_alignRight="@+id/total_cals"
+        android:layout_below="@+id/average_cals"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:minHeight="36dp"
+        android:onClick="openCalorieLog"
+        android:text="@string/log_button"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/total_cals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:text="@string/total_cals"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/quit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:minHeight="36dp"
+        android:onClick="quit"
+        android:text="@string/quit_button"
+        android:textSize="13sp" />
+
+</RelativeLayout>

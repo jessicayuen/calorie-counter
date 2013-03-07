@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cmput301.as1.caloriecounter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cmput301.as1.caloriecounter.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cmput301.as1.caloriecounter.DisplayLogActivity"
+            android:label="@string/title_activity_display_log" >
+        </activity>
+        <activity
+            android:name="cmput301.as1.caloriecounter.AddNewEntryActivity"
+            android:label="@string/title_activity_add_new_entry" >
+        </activity>
+        <activity
+            android:name="cmput301.as1.caloriecounter.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+    </application>
+
+</manifest>

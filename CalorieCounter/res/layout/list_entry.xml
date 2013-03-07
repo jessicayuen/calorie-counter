@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingLeft="10sp" android:paddingRight="10sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingTop="2sp">
+
+    	<LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="fill_parent" >
+        		<TextView android:layout_height="wrap_content"
+               		 android:layout_width="fill_parent" android:id="@+id/tvDate"
+               		 android:text="Date" android:typeface="sans" android:textSize="16sp" android:textStyle="bold"></TextView>
+
+        		<Button
+        		    android:id="@+id/btnRemove"
+        		    android:layout_width="32dp"
+        		    android:layout_height="25dip"
+        		    android:text="x"
+        		    android:textSize="8dp" />
+
+		</LinearLayout>
+		
+        <LinearLayout android:id="@+id/LinearLayout02"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold"
+                        android:text="Description:  " android:textSize="13sp"></TextView>
+                <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="filler"
+                        android:id="@+id/tvDescription" android:textSize="13sp"></TextView>
+        </LinearLayout> 
+        
+        <LinearLayout android:id="@+id/LinearLayout02"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold"
+                        android:text="Total Calories:  " android:textSize="13sp"></TextView>
+                <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="filler"
+                        android:id="@+id/tvTotalCalories" android:textSize="13sp"></TextView>
+        </LinearLayout> 
+        
+        <LinearLayout android:id="@+id/LinearLayout02"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold"
+                        android:text="Calories per weight/vol/serving:  " android:textSize="13sp"></TextView>
+                <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text=""
+                        android:id="@+id/tvCalPerWeight" android:textSize="13sp"></TextView>
+        </LinearLayout> 
+        
+        <LinearLayout android:id="@+id/LinearLayout02"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold"
+                        android:text="Per weight/vol/serving:  " android:textSize="13sp"></TextView>
+                <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text=""
+                        android:id="@+id/tvPerWeight" android:textSize="13sp"></TextView>
+        </LinearLayout> 
+        
+        <LinearLayout android:id="@+id/LinearLayout02"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold"
+                        android:text="Total weight/vol/serving consumed:  " android:textSize="13sp"></TextView>
+                <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text=""
+                        android:id="@+id/tvTotalWeightCon" android:textSize="13sp" android:layout_weight="1"></TextView>
+        </LinearLayout>
+
+
+
+</LinearLayout>

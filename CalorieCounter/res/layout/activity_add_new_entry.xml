@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewEntryActivity" >
+
+    <!-- Text Views -->
+    
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/date"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/description"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calories_per_weight"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/total_calories"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_weight_consumed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancel_button"
+        android:layout_alignLeft="@+id/per_weight"
+        android:layout_marginBottom="24dp"
+        android:maxWidth="150dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/total_weight_consumed"
+        android:textSize="13sp" />
+    
+     <TextView
+        android:id="@+id/calories_per_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/calories_per_weight_text"
+        android:layout_toLeftOf="@+id/calories_per_weight_text"
+        android:maxWidth="150dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:text="@string/calories_per_weight"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/per_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total_weight_consumed"
+        android:layout_toLeftOf="@+id/per_weight_text"
+        android:maxWidth="150dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/per_weight"
+        android:textSize="13sp" />
+    
+    <!-- Edit Text Views -->
+    
+    <EditText
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total_calories"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/date_text"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:hint="eg. eating some craisins, Lunch at Burrito Libre."
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/total_calories_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calories_per_weight"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/calories_per_weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/per_weight"
+        android:layout_alignLeft="@+id/cancel_button"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/per_weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total_weight_consumed"
+        android:layout_alignLeft="@+id/calories_per_weight_text"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/total_weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/total_weight_consumed"
+        android:layout_alignLeft="@+id/per_weight_text"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="13sp" />
+    
+	<!-- Buttons -->    
+    
+    <Button
+        android:id="@+id/cancel_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/submit_button"
+        android:onClick="returnToPrevActivity"
+        android:text="@string/cancel_button" />
+
+    <Button
+        android:id="@+id/submit_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="createEntry"
+        android:text="@string/submit_button" />
+
+</RelativeLayout>

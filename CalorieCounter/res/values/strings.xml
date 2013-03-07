@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">jyuen-calorie-counter</string>
+    <string name="menu_settings">Settings</string>
+    <string name="total_cals">Total calorie consumption:</string>
+    <string name="average_cals">Average calorie consumption per day:</string>
+    <string name="total_time">Total overall consumption time:</string>
+    <string name="log_button">View Calorie Log</string>
+    <string name="title_activity_display_log">Calorie Log</string>
+    <string name="add_new_log_entry">Add new entry</string>
+    <string name="title_activity_add_new_entry">New Calorie Log Entry</string>
+    <string name="date">Date:</string>
+    <string name="description">Description:</string>
+    <string name="total_calories">Total calories:</string>
+    <string name="calories_per_weight">Calories per weight/volume/serving:</string>
+    <string name="per_weight">Per weight/volume/serving:</string>
+    <string name="total_weight_consumed">Total weight/volume/serving consumed:</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section1">Section 1</string>
+    <string name="submit_button">Submit</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="hint_total_weight">i.e. 200g</string>
+    <string name="hint_per_weight">i.e. 65g</string>
+    <string name="hint_cal_per_weight">i.e. 220 Cal</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="back_button">Back</string>
+    <string name="quit_button">Quit</string>
+    <string name="remove_list_item">x</string>
+
+</resources>
